@@ -1,0 +1,8 @@
+CREATE TABLE accounts (
+    id UUID PRIMARY KEY,
+    amount BIGINT NOT NULL,
+    version BIGINT NOT NULL,
+    currency VARCHAR(3) NOT NULL,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
